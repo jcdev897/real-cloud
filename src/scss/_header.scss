@@ -7,3 +7,13 @@
 .navbar-brand {
   margin: 0px;
 }
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    padding-right: 0.75rem;
+  }
+}

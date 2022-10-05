@@ -77,7 +77,7 @@ const ByName = () => {
               <Col md>
                 <FloatingLabel
                   controlId="floatingInputGrid"
-                  label="Middle Name (Required)"
+                  label="Middle Name"
                 >
                   <Form.Control type="text" />
                 </FloatingLabel>
