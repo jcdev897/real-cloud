@@ -1,8 +1,7 @@
 import React from "react";
-import { Nav, Dropdown, Button, Image } from "react-bootstrap";
+import { Nav, Button } from "react-bootstrap";
 import { Link, useLocation } from "react-router-dom";
-import { FaCaretDown } from "react-icons/fa";
-import noThumbnailUser from '../../assets/no-thumbnail-user.jpg'
+import TopProfile from "./topProfile";
 
 export default function Menu() {
   const location = useLocation();
@@ -34,39 +33,7 @@ export default function Menu() {
       </div>
       <div className="d-flex align-items-center">
         <Button>Your Credits: 0</Button>
-        <Dropdown>
-          <Dropdown.Toggle className="drop-navlink">
-            <Image
-              src={noThumbnailUser}
-              className="drop-img rounded-circle"
-              alt="userlogo"
-            />
-          </Dropdown.Toggle>
-          <Dropdown.Menu>
-            <Dropdown.Item>
-              <div className="d-flex">
-                <FaCaretDown />
-                <p>Account</p>
-              </div>
-            </Dropdown.Item>
-            <hr></hr>
-            <Dropdown.Item>
-              <div className="d-flex">
-                <FaCaretDown />
-                <p>
-                  Help Center<p>(844) 300 - 5122</p>
-                </p>
-              </div>
-            </Dropdown.Item>
-            <hr></hr>
-            <Dropdown.Item>
-              <div className="d-flex">
-                <FaCaretDown />
-                <p>Sign out</p>
-              </div>
-            </Dropdown.Item>
-          </Dropdown.Menu>
-        </Dropdown>
+        <TopProfile/>
       </div>
     </Nav>
   )
